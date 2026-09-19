@@ -36,7 +36,7 @@ $$K_{\text{Lead}}(s) = K_p + \frac{K_d s}{1 + \tau_{\text{lead}}s}$$
 
 - **Stability & Margins:** Synthesized via modal decomposition of the pinned Laplacian matrix $L_p = L + \gamma \Pi_1$. Guaranteed a Phase Margin $\ge 55^\circ$ across all pinned Laplacian eigenvalues.
 - **Feedforward Acceleration Injection:** To cancel tracking delays during accelerating trajectories (circular/sinusoidal), a reference acceleration feedforward term $\ddot{r}(t)$ was integrated.
-- **Robustness:** The sensitivity functions ($S(s)$ and $W(s)$) ensure optimal attenuation of low-frequency disturbances ($5\text{ rad/s}$) and high-frequency sensor noise ($100\text{ rad/s}$), preventing actuator saturation.
+- **Robustness:** The sensitivity functions ($S(s)$ and W(s)) ensure optimal attenuation of low-frequency disturbances ($5\text{ rad/s}$) and high-frequency sensor noise ($100\text{ rad/s}$), preventing actuator saturation.
 
 ### 2. State-Variable Feedback (SVFB / LQR + Observer)
 - **Concept:** Optimal full-state consensus protocol formulated in the time domain.
